@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Móvil</title>
+    <style>
+        /* 1. Configuración Base */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif; /* Tipografía limpia */
+            background-color: #231F20;
+            color: #f5f5f5;
+            /* Establecemos un tamaño base. 1em = 16px aprox por defecto */
+            font-size: 100%; 
+            display: flex;
+            justify-content: center;
+        }
+
+        /* 2. Contenedor Principal (Simula el ancho del móvil) */
+        .main-container {
+            width: 100%;
+            max-width: 480px; /* Evita que se estire demasiado en PC */
+            display: flex;
+            flex-direction: column;
+           /* gap: 2em;  Espacio entre elementos verticales */
+        }
+
+        /* 3. Estilos para las cajas grises (GIFs y Mapa) */
+        .media-box {
+            background-color: #d9d9d9; /* Gris claro */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            text-transform: uppercase;
+        }
+
+        .map-box {
+            background-color: #d9d9d9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            text-transform: uppercase;
+        }
+
+        /* 4. Estilos para el Botón de WhatsApp */
+        .whatsapp-container {
+            display: flex;
+            justify-content: center;
+            margin: 1em 0; /* Un poco de aire extra arriba y abajo */
+        }
+
+        .btn-whatsapp {
+            background-color: #4cd964; /* Verde brillante tipo iOS/Whatsapp */
+            color: #2c0e38; /* Color oscuro para el texto (según imagen) */
+            text-decoration: none;
+            padding: 1em 2em;
+            font-size: 1em; /* Mantiene la base */
+            text-align: center;
+            display: inline-block;
+            font-weight: normal;
+        }
+
+        .btn-whatsapp:hover {
+            opacity: 0.9; /* Pequeño efecto al pasar el mouse/dedo */
+        }
+
+        /* 5. Texto final centrado */
+        .footer-text {
+            text-align: center;
+            font-size: 1em;
+            margin-bottom: 2em; /* Espacio al final de la página */
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <main class="main-container">
+
+        <div class="media-box">
+            <img src="invitacion.gif" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+
+        <div class="media-box">
+                        <img src="Img2.png" style="width:100%; height:100%;">
+        </div>
+ <p class="footer-text">
+            antes del 23 de enero
+        </p>        <div class="whatsapp-container">
+            <div class="whatsapp-container">
+    <a href="https://wa.me/5219841575901?text=hola%20te%20escribo%20para%20confirmar%20mi%20asistencia" class="btn-whatsapp" target="_blank">
+        ¡Click AQUI! </br> para confirmar asistencia  
+    </a>
+</div>
+        </div>
+<p class="footer-text">
+NO OLVIDES TU TRAJE DE BAÑO        </p>
+        <div class="map-box">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3727.579507347886!2d-87.47925182474724!3d20.88899228072566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDUzJzIwLjQiTiA4N8KwMjgnMzYuMCJX!5e0!3m2!1ses!2smx!4v1768545736606!5m2!1ses!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        
+
+    </main>
+
+</body>
+</html>
